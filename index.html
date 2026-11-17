@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardball Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hardball Haven</h1>
+    </header>
+
+    
+        <main class="blog-container">
+            <!-- left sidebar, reverse chrono list-->
+            <aside class="blog-sidebar">
+                <h3>Recent Ramblings</h3>
+                <ul class="post-list">
+                    <li><a href="#" onclick="showPost('post1', this)">1. First Post! Talking Transactions (11/16)</a></li>
+                    <!--<li><a href="#" onclick="showPost('post3', this)">3. My Goals for the Year (11/15)</a></li>
+                    <li><a href="#" onclick="showPost('post2', this)">2. Why I Started this Blog (11/15)</a></li>
+                    <li><a href="#" onclick="showPost('post1', this)">1. Building My Site (8/26)</a></li> -->
+                </ul>
+            </aside>
+
+            <!--right/middle column: reading area-->
+            <section class="blog-reader">
+
+                <!-- 
+                type "newlink" then tab to make a new blog link for sidebar ^
+                to make new blog article, type "newpost" then tab to make a key to fill out
+                -->
+                
+                <article id="post1" class="blog-post">
+                    <h2>First Post! Talking Transactions</h2>
+                    <p class="post-date">Published on November 16, 2026</p>
+                    <hr>
+                    <h3>Intro</h3>
+                    <p>It's as good a place as any to start with the most recent transactions, so what happened on that side of the game today? Well, not much exactly but, we’re in the middle of November and there might not even be a full season of ball next year so I’ll take what I can get! Today the Baltimore Orioles re-signed the 28 year-old righty shortstop José Barrero to a minor league contract after he elected free agency on Halloween earlier this year.</p>
+                    <hr>
+                    <h3>Barrero’s History</h3>
+                    <p>Barrero was signed as an amature free agent by the Cincinnati Reds in 2017 and worked his way up their system till he debuted in 2020. He was moved around a lot his first two seasons between the minors and majors, only accruing 130 AB’s in that time but also -0.6 bWAR. In 2023 he was finally given a longer shot at it and… blew it. In 48 games he was worth -1.6 bWAR and in 2023 he had a similar amount of time with only slightly better results and was subsequently put on waivers. </p>
+                    <p>Spring of 2024 the Rangers picked him up and he played with AAA but he never made it to the majors with them and elected free agency in November. After that he was picked up by the Cardinals, and played with their minors till the end of April 2025 when he was called back up to the bigs. He played 22 games for St. Louis and posted a rough .138/.194/.276 slash-line, later being DFA’d in June. From there, he was picked up by the O’s in July and played a 2 game stint with them in the majors in September 2026. He then elected free agency, which leads us back till today.</p>
+                    <hr>
+                    <h3>Barrero’s Game</h3>
+                    <p>He has never been more than a significantly below average hitter unfortunately, and at his worst posted a -21 BRV (not qualified) on the year. He has shown alright plate discipline at times, and can draw a walk, but it is not enough to overcome his anemic batting averages. He has a tall, athletic build standing at 6’4 and 211 lbs and has been a serviceable defender at short. In his more complete seasons he has had a significantly above average arm (82 percentile) and a slightly below average range.  </p>
+                    <hr>
+                    <h3>Outlook</h3>
+                    <p>This is one of those signings that just happens because teams need guys in the minors that can play ball if needed. Minor Leaguers make the world go ‘round after all! There’s not much offensive upside, but if he can start getting on base more than he is now, he could be a below average bench piece. That guy on your team they put in when your starter needs a day and you go, “oh yeah, forgot he played for us”. There is not much risk in this for the O’s but also not much to gain, so most likely do not expect any big news coming from this move.</p>
+                    <hr>
+                    <h3>Fun Fact / Sources</h3>
+                    <p>Our guy José Barrero also played under the name José Garcia! I cannot see when his name was changed but I feel like it's a bit out of the norm to see a name change nowadays.</p>
+                    <p>Sources used: https://www.baseball-reference.com/players/g/garcijo02.shtml#all_transactions_other, https://www.mlb.com/player/jose-barrero-676480?stats=career-r-hitting-minors&year=2026, https://baseballsavant.mlb.com/savant-player/jose-barrero-676480?stats=statcast-r-hitting-mlb   </p>
+                    <hr>
+                </article>
+
+                <!--<article id="post3" class="blog-post">
+                    <h2>My Goals for the Year</h2>
+                    <p class="post-date">Published on November 15, 2026</p>
+                    <hr>
+                    <p>This is where you would put the full text of your blog post about your goals.</p>
+                </article>
+
+                <article id="post2" class="blog-post">
+                    <h2>Why I Started this Blog</h2>
+                    <p class="post-date">Published on November 15, 2026</p>
+                    <hr>
+                    <p>This is where you would put the full text of your blog post about why you started this blog.</p>
+                </article>
+
+                <article id="post1" class="blog-post">
+                    <h2>Building My First Site</h2>
+                    <p class="post-date">Published on August 27, 2026</p>
+                    <hr>
+                    <p>This is the reading pane where the full text of your blog post goes! Right now, it is defaulting to show the most recent post layout. As you learn more code (specifically JavaScript later on), you'll be able to make clicking the links on the left instantly change the text right here.</p>
+                    <p>For now, this layout gives your readers a clean, book-like interface to explore your thoughts without jumping to different pages.</p>
+                </article> -->
+
+            </section>
+        </main>
+
+
+    <footer>
+        <div class="footer-about">
+            <img src="images/portrait.jpg" alt="Portrait of the author" class="author-photo">
+            <div class="author-bio">
+                <h4> About Me!</h4>
+                <p> I'm a big baseball fan and wanted to make a space to talk about the game I love. </p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Built from scratch.</p>
+    </footer>
+
+    <script>
+        function showPost(postId, clickedLink) {
+            // only prevent default jump if triggered by a mouse click
+            if (window.event) {
+                window.event.preventDefault();
+            }
+
+            // hide all blog posts
+            const posts = document.querySelectorAll('.blog-post');
+            posts.forEach(post => {
+                post.style.display = 'none';
+            });
+
+            // show the target blog post
+            const targetPost = document.getElementById(postId);
+            if (targetPost) {
+                targetPost.style.display = 'block';
+            }
+
+            // move the active highlight to the matching sidebar link
+            const links = document.querySelectorAll('.post-list a');
+            links.forEach(link => {
+                link.classList.remove('active-post');
+            });
+            if (clickedLink) {
+                clickedLink.classList.add('active-post');
+            }
+        }
+
+        // run this code as soon as the webpage loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstPost = document.querySelector('.blog-post');
+            const firstLink = document.querySelector('.post-list a');
+
+            if (firstPost && firstLink) {
+                showPost(firstPost.id, firstLink);
+            }
+        });
+    </script>
+
+</body>
+</html>

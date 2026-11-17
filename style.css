@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* center elements and add padding to core containers */
+.blog-container {
+    max-width: 75rem;
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.blog-sidebar {
+    flex: 1;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.blog-sidebar h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.post-list a {
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.post-list a:hover {
+    background-color: #f0f4f8;
+    color: #4a90e2;
+}
+
+.post-list .active-post {
+    background-color: #e2eeff;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* right column: reading pane */
+.blog-reader {
+    flex: 3;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.blog-reader h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 1.5rem;
+}
+
+/*  title header style */
+header {
+    font-family: 'Black Ops One', serif;
+    width: 100%;
+    margin: 0rem;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/baseball_header.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    max-width: 75rem;
+    margin: 3rem auto 2rem auto;
+    padding: 2rem 1rem;
+    border-top: 1px solid #ddd;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* side-by-side layout for photo and bio */
+.footer-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 45rem;
+    margin: 0 auto 1.5rem auto;
+    text-align: left;
+}
+
+/* makes portrait circular */
+.author-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.author-bio h4 {
+    margin: 0 0 0.4rem 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.author-bio p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0rem;
+    letter-spacing: 1px;
+}
+
+/* mobile and tablet layout adjustments */
+@media (max-width: 768px) {
+    /* stack sidebar above reading pane */
+    .blog-container {
+        flex-direction: column;
+        margin: 1rem auto;
+        gap: 1.25rem;
+    }
+
+    /* reduce padding so text has more room on small screens */
+    .blog-reader {
+        padding: 1.5rem;
+    }
+
+    .blog-reader h2 {
+        font-size: 1.6rem;
+    }
+
+    /* scale down header title so it doesn't wrap weird */
+    header {
+        padding: 40px 1rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    /* stack footer portrait above bio text */
+    .footer-about {
+        flex-direction: column;
+        text-align: center;
+    }
+}
